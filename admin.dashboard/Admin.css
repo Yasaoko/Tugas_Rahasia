@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.BeOl{
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.BeOl h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.BeOl ul{
+    list-style-type: none;
+}
+
+.BeOl ul li{
+    margin: 15px 0px;
+}
+
+.BeOl ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.BeOl ul li a:hover{
+    background-color: #444;
+}
+
+.Main-content{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.header h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3{
+    margin-bottom: 10px;
+}
+
+.footer{
+
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .BeOl {
+        width: 200px;
+    }
+}
